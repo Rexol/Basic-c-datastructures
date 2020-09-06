@@ -8,11 +8,9 @@ private:
     int* mas;
     int _top;
 
-    
-
 public:
 
-int* resize(const int *mas, unsigned size, unsigned new_size)
+    int* resize(const int *mas, unsigned size, unsigned new_size)
     {
         int* n = new int[new_size];
         for (unsigned i = 0; i < ((size > new_size)?new_size:size); ++i) n[i] = mas[i];
@@ -63,10 +61,9 @@ private:
     int* mas;
     int size;
 
-    
 public:
 
-int* enresize(const int *mas)
+    int* enresize(const int *mas)
     {
         int* n = new int[size+1];
         for (unsigned i = 0; i < size; ++i) n[i] = mas[i];
